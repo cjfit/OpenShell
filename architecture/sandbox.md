@@ -72,7 +72,9 @@ relay settings.
 
 Credential placeholders in proxied HTTP requests can be resolved by the proxy
 when policy allows the target endpoint. Secrets must not be logged in OCSF or
-plain tracing output.
+plain tracing output. The supervisor uses revision-scoped placeholders for
+rotating provider credentials; provider environment keys beginning with
+`v<digits>_` are reserved for that placeholder namespace.
 
 ## Connect and Logs
 
